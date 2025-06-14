@@ -80,6 +80,7 @@ document.querySelector("#playBtn").addEventListener("click", function () {
 });
 
 document.querySelector(".framebtm").addEventListener("click", function (e) {
+    if (!e.target.classList.contains("bubble")) return;
     var clickednum = Number(e.target.textContent);
     if (clickednum === rn && timer > 0) {
         const popSound = document.getElementById("popSound");
@@ -91,4 +92,10 @@ document.querySelector(".framebtm").addEventListener("click", function (e) {
         createbubble();
         getnewhit();
     }
+    if(clickednum !== rn && timer >10 ){
+        timer=timer-10;
+    }
+
+
+
 });
