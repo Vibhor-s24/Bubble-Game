@@ -10,8 +10,20 @@ function increase() {
 
 function createbubble() {
     var clutter = "";
+    const width = window.innerWidth;
 
-    for (let index = 0; index < 144; index++) {
+    if (width > 1200) {
+        bubbleCount = 144;
+    } else if (width > 992) {
+        bubbleCount = 120;
+    } else if (width > 768) {
+        bubbleCount = 100;
+    } else if (width > 576) {
+        bubbleCount = 70;
+    } else {
+        bubbleCount = 60; // very small screen
+    }
+    for (let index = 0; index < bubbleCount; index++) {
         let random = Math.floor(Math.random() * 10);
         clutter += `<div class="bubble">${random}</div>`;
     }
