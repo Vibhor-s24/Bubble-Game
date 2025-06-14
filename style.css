@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.main{
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(202, 239, 202);
+}
+.frame{border-radius:10px;
+    overflow: hidden;
+    height: 90%;
+    width: 80%;
+    background-color: rgb(242, 247, 242);
+}
+.frametop{
+    padding: 0 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(41, 122, 41);
+}
+.menu{
+    gap: 15px;
+    display: flex;
+   color: white;
+   align-items: center;
+   justify-content: center;
+   
+}
+.box{padding: 10px 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 800;
+    border-radius: 5px;
+    background-color: white;
+}
+.framebtm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: calc(100% - 100px);
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.bubble{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    background-color: rgb(41, 122, 41);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color: rgb(102, 164, 102);
+}
+.restart{
+    padding: 10px 20px; font-size: 18px;
+    background-color:rgb(41, 122, 41);
+    border-radius: 10px;
+}
+.restart:hover{
+    background-color:rgb(102, 164, 102) ;
+    cursor: pointer;
+    color: rgb(225, 176, 176);
+}
+#playBtn{
+    padding: 10px 20px; font-size: 18px;
+    background-color:rgb(41, 122, 41);
+    border-radius: 10px;
+
+}
+#playBtn:hover{
+    background-color:rgb(102, 164, 102) ;
+    cursor: pointer;
+    color: rgb(225, 176, 176);
+}
