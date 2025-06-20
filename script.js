@@ -92,7 +92,7 @@ document.querySelector(".framebtm").addEventListener("click", function (e) {
         createbubble();
         getnewhit();
     }
-    if(clickednum !== rn && timer >10 ){
+    else if(clickednum !== rn && timer >10 ){
         timer=timer-10;
     }
 
